@@ -25,7 +25,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "typed.js": "^2.1.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
