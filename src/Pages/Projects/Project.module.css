@@ -1,0 +1,95 @@
+.sectionContent {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(207, 62%, 9%, 0.997) ;
+margin-top: 70px;
+padding-bottom: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.sectionContent h1 {
+    padding-top: 50px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.contentProjects {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+gap: 20px;}
+.card { 
+    width: 343px;
+    height: 400px;
+    background-color: hsla(209, 66%, 19%, 0.997) ;
+    border-radius: 12px;
+
+}
+.imagess {
+height: 60%;
+width: 95%;
+margin: auto;
+margin-top: 8px;
+}
+.imagess img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card h3 {
+    padding-top: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+.card p {
+    color: rgb(200, 200, 200);
+
+}
+.card .divButtons {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+/* ========================================================================================== */
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .closeButton:hover {
+    color: red;
+  }
