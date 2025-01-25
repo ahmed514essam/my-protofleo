@@ -11,7 +11,7 @@ import { faFacebookF, faLinkedinIn, faGithub, faWhatsapp } from "@fortawesome/fr
 
  const name = "I'm Ahmed Essam El Sayed" ;
 
- const PersonalImage = "/PersonalImage/two.png";
+ const PersonalImage = "PersonalImage/two.png";
 
  const alerty = () => {
   alert("Resume is Changing at Present")

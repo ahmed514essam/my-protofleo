@@ -1,30 +1,39 @@
 import "./Menu.css" ;
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars , faXmark } from "@fortawesome/free-solid-svg-icons";
-// import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse , faPhone , faInfo , faPager , faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
 
 
-// , faPhone , faHouse , faInfo , faPager , faLayerGroup
 
 
 
 const Menu = () => 
 {
 
-// const location = useLocation();
 
     return (
 <>
-
-<button className="btn listSides" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+<button
+        className="btn listSides"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
 <FontAwesomeIcon className="fontAwsemList"  icon={faBars} />
 
 
 </button>
 
-<div className="offcanvas offcanvas-start" data-bs-scroll="true" tabIndex={-1} id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div className="offcanvas-header">
+<div
+        className="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        tabIndex={-1}
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >  <div className="offcanvas-header">
     <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
     <span className="yTitle">M</span>y  <span className="yTitle">P</span>ort<span className="yTitle">f</span>olio
 
@@ -46,7 +55,69 @@ const Menu = () =>
 
 
 
+<Link to={""} className={`navi-link ${location.pathname === "/" ? "active" : ""}`}>
+<span className="oneLinkOnSide">
 
+  <span className="iconWithOneLink">
+  <FontAwesomeIcon className="iconForLink" icon={faHouse} />  </span>
+  <span className="icory ps-4">
+
+Home
+</span>
+</span>
+</Link>
+
+<Link to={"/about"} className={`navi-link ${location.pathname === "/about" ? "active" : ""}`}>
+<span className="oneLinkOnSide">
+<span className="iconWithOneLink">
+<FontAwesomeIcon  className="iconForLink" icon={faInfo} />
+  </span>
+  <span className="icory ps-5">
+
+About
+</span>
+</span>
+ 
+</Link>
+
+<Link to={"/myprojects"} className={`navi-link ${location.pathname === "/myprojects" ? "active" : ""}`}>
+<span className="oneLinkOnSide">
+
+<span className="iconWithOneLink">
+<FontAwesomeIcon  className="iconForLink" icon={faPager} />
+  </span>
+  <span className="icory ps-4">
+
+Projects
+</span>
+</span>
+</Link>
+
+<Link to={"/myskills"} className={`navi-link ${location.pathname === "/myskills" ? "active" : ""}`}>
+<span className="oneLinkOnSide">
+
+<span className="iconWithOneLink">
+<FontAwesomeIcon  className="iconForLink" icon={faLayerGroup} />
+  </span>
+  <span className="icory ps-4">
+
+Skills
+</span>
+</span>
+</Link>
+
+<Link to={"/contactme"} className={`navi-link ${location.pathname === "/contactme" ? "active" : ""}`}>
+<span className="oneLinkOnSide">
+
+<span className="iconWithOneLink">
+<FontAwesomeIcon  className="iconForLink" icon={faPhone} />
+  </span>
+  <span className="icory ps-4">
+
+Contact
+</span>
+</span>
+</Link>
 
 </div>
 
