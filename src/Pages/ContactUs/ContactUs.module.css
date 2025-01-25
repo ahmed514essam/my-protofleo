@@ -6,6 +6,16 @@ margin-top: 70px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
+@media (max-width:1200px) {
+  
+    .bageContact {
+        height: 100vh;
+        width: 100%;
+        background-color: hsla(207, 62%, 9%, 0.997) ;
+    margin-top: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }}
 .bageContact h1 {
     width: 100%;
     text-align: center;
@@ -91,6 +101,15 @@ transition: .5s ease;
     padding-left: 10px;
 }
 @media (max-width:900px) {
+  
+    .bageContact {
+        height: 100vh;
+        width: 100%;
+        background-color: hsla(207, 62%, 9%, 0.997) ;
+    margin-top: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
     .continueContct {
         width: 80%;
      
