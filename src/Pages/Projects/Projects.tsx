@@ -72,14 +72,14 @@ setCurrentItem(null);
 {data.map((item) => (
           <div className={styles.card} key={item.name}>
           <div className={styles.imagess}>
-              <img src={item.image} alt="Project images" />
+              <img src={item.image} alt="Project images" loading="lazy" />
           
               </div> 
             <h3>{item.name}</h3>
-<p onClick={() => displayOvView(item)}>Overview</p>
+<p className={styles.overParar} onClick={() => displayOvView(item)}>More</p>
             <div className={styles.divButtons}>
-          <Link to={item.demo}>Demo</Link>
-          <Link to={item.repo}><FontAwesomeIcon icon={faGithub} /></Link>
+          <Link className={styles.linkDemo} to={item.demo}>Demo</Link>
+          <Link className={styles.linkRepo} to={item.repo}><FontAwesomeIcon icon={faGithub} /></Link>
 
             </div>
           </div>
@@ -105,15 +105,16 @@ setCurrentItem(null);
 
             </button>
 
-            <div className={styles.card} >
-          <div className={styles.imagess}>
-              <img src={currentItem.image} alt="Project images" />
+            <div className={styles.cardov} >
+          <div className={styles.imagessov}>
+              <img src={currentItem?.image} alt="Project images" />
           
               </div> 
-            <h3>{currentItem.name}</h3>
-            <div className={styles.divButtons}>
-          <Link to={currentItem.demo}>Demo</Link>
-          <Link to={currentItem.repo}><FontAwesomeIcon icon={faGithub} /></Link>
+            <h3>{currentItem?.name}</h3>
+            <p>{currentItem?.description}</p>
+            <div className={styles.divButtonsov}>
+          <Link className={styles.linkdemOver} to={currentItem?.demo || "#"}>Demo</Link>
+          <Link className={styles.linkGithupOver} to={currentItem?.repo || "#"}><FontAwesomeIcon icon={faGithub} /></Link>
 
             </div>
           </div>
