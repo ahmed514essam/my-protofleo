@@ -35,6 +35,13 @@
         "image" : "projectsImages/netflix.png"
     },
     {
+        "name" : "Football Quiz",
+        "description" : "My first project with Next.js, built using TypeScript, is a general football trivia app. I incorporated mission-based concepts and various hooks to develop it." ,
+        "demo" : "https://football-questions.vercel.app/" ,
+        "repo" : "https://github.com/ahmed514essam/Football-Questions.git" ,
+        "image" : "projectsImages/FootballQuiz.png"
+    },
+    {
         "name" : "Caluclator",
         "description" : "A simple calculator created using JavaScript only" ,
         "demo" : "https://ahmed514essam.github.io/Simble-Calculator/" ,
