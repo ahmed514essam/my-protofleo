@@ -8,6 +8,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 0;
+    z-index: 999;
+    
 }
 .copyRightP {
     font-weight: 600;

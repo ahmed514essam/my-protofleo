@@ -13,9 +13,7 @@ import { faFacebookF, faLinkedinIn, faGithub, faWhatsapp } from "@fortawesome/fr
 
  const PersonalImage = "PersonalImage/two.png";
 
- const alerty = () => {
-  alert("Resume is Changing at Present")
- }
+
 
     return (
         <>
@@ -55,8 +53,9 @@ A software developer specializing in front-end development with React JS and Nex
 </div>
 
 
-<section onClick={alerty} className={style.sectionDownload}>
-<a>Download My Resume</a>
+<section  className={style.sectionDownload}>
+<a rel="noreferrer" target="_self" href="https://drive.google.com/uc?export=download&id=11jTqpUULT9SKcTv8kZSPqnh-_euQ1iLP" download="My_Resume.pdf">
+Download My Resume</a>
 </section>
 
 

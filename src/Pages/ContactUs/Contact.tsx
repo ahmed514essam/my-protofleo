@@ -83,6 +83,63 @@ const NotAlertBoth = () => {
 
     return (
         <>
+
+
+
+{errname ? (
+    <div className={style.nameOverAlert}>
+    <div className={style.nameCardAlert}>
+        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertName} icon={faXmark} /></div>
+        <div className={style.nameBodyOfAlert}>
+            <h3>Enter Correct Name</h3>
+        </div>
+        <div className={style.nameBtnAlert}>
+            <button onClick={NotAlertName}>Cancel</button>
+        </div>
+    </div>
+</div>
+) : (
+null
+)}
+
+
+{erremail ? (
+    <div className={style.emailOverAlert}>
+    <div className={style.emailCardAlert}>
+        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertEmail} icon={faXmark} /></div>
+        <div className={style.emailBodyOfAlert}>
+        <h3>Enter Correct Email</h3>
+        </div>
+        <div className={style.emailBtnAlert}>
+            <button onClick={NotAlertEmail}>Cancel</button>
+        </div>
+    </div>
+</div>
+) : (
+ null   
+)}
+
+
+
+
+{errboth ? (
+    <div className={style.bothOverAlert}>
+    <div className={style.bothCardAlert}>
+        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertBoth} icon={faXmark} /></div>
+        <div className={style.bothBodyOfAlert}>
+        <h3>Email or Name is not Correct</h3>
+        </div>
+        <div className={style.bothBtnAlert}>
+            <button onClick={NotAlertBoth}>Cancel</button>
+        </div>
+    </div>
+</div>
+) : (
+ null   
+)}
+
+
+
 <section className={style.bageContact}>
     <h1>Contact With Me</h1>
 
@@ -319,58 +376,6 @@ Google
 
 </section>
 
-
-{errname ? (
-    <div className={style.nameOverAlert}>
-    <div className={style.nameCardAlert}>
-        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertName} icon={faXmark} /></div>
-        <div className={style.nameBodyOfAlert}>
-            <h3>Enter Correct Name</h3>
-        </div>
-        <div className={style.nameBtnAlert}>
-            <button onClick={NotAlertName}>Cancel</button>
-        </div>
-    </div>
-</div>
-) : (
-null
-)}
-
-
-{erremail ? (
-    <div className={style.emailOverAlert}>
-    <div className={style.emailCardAlert}>
-        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertEmail} icon={faXmark} /></div>
-        <div className={style.emailBodyOfAlert}>
-        <h3>Enter Correct Email</h3>
-        </div>
-        <div className={style.emailBtnAlert}>
-            <button onClick={NotAlertEmail}>Cancel</button>
-        </div>
-    </div>
-</div>
-) : (
- null   
-)}
-
-
-
-
-{errboth ? (
-    <div className={style.bothOverAlert}>
-    <div className={style.bothCardAlert}>
-        <div className={style.closediv}><FontAwesomeIcon onClick={NotAlertBoth} icon={faXmark} /></div>
-        <div className={style.bothBodyOfAlert}>
-        <h3>Email or Name is not Correct</h3>
-        </div>
-        <div className={style.bothBtnAlert}>
-            <button onClick={NotAlertBoth}>Cancel</button>
-        </div>
-    </div>
-</div>
-) : (
- null   
-)}
 
 
 
