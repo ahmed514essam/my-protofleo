@@ -9,12 +9,11 @@ import {
   faPager,
   faLayerGroup,
 } from "@fortawesome/free-solid-svg-icons";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const Menu = () => {
-  const menuRef = useRef(null);
   const [tog, setTog] = useState<boolean>(false);
-  const location = useLocation(); // ✅ Fix: Access the current path
+  const location = useLocation();
 
   const clickAny = () => {
     setTog(false);
@@ -32,7 +31,6 @@ const Menu = () => {
 
       <div
         className={`offcanvas offcanvas-start ${tog ? "show" : ""}`}
-        ref={menuRef}
         data-bs-scroll="true"
         tabIndex={-1}
         id="offcanvasWithBothOptions"
@@ -40,8 +38,8 @@ const Menu = () => {
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-            <span className="yTitle">M</span>y{" "}
-            <span className="yTitle">P</span>ort
+            <span className="yTitle">M</span>y <span className="yTitle">P</span>
+            ort
             <span className="yTitle">f</span>olio
           </h5>
           <button
@@ -58,7 +56,9 @@ const Menu = () => {
           <div className="bodyNav">
             <Link
               to={"/"}
-              className={`navi-link ${location.pathname === "/" ? "active" : ""}`}
+              className={`navi-link ${
+                location.pathname === "/" ? "active" : ""
+              }`}
               onClick={clickAny}
             >
               <span className="oneLinkOnSide">
@@ -71,7 +71,9 @@ const Menu = () => {
 
             <Link
               to={"/about"}
-              className={`navi-link ${location.pathname === "/about" ? "active" : ""}`}
+              className={`navi-link ${
+                location.pathname === "/about" ? "active" : ""
+              }`}
               onClick={clickAny}
             >
               <span className="oneLinkOnSide">
@@ -84,7 +86,9 @@ const Menu = () => {
 
             <Link
               to={"/myprojects"}
-              className={`navi-link ${location.pathname === "/myprojects" ? "active" : ""}`}
+              className={`navi-link ${
+                location.pathname === "/myprojects" ? "active" : ""
+              }`}
               onClick={clickAny}
             >
               <span className="oneLinkOnSide">
@@ -97,12 +101,17 @@ const Menu = () => {
 
             <Link
               to={"/myskills"}
-              className={`navi-link ${location.pathname === "/myskills" ? "active" : ""}`}
+              className={`navi-link ${
+                location.pathname === "/myskills" ? "active" : ""
+              }`}
               onClick={clickAny}
             >
               <span className="oneLinkOnSide">
                 <span className="iconWithOneLink">
-                  <FontAwesomeIcon className="iconForLink" icon={faLayerGroup} />
+                  <FontAwesomeIcon
+                    className="iconForLink"
+                    icon={faLayerGroup}
+                  />
                 </span>
                 <span className="icory ps-4">Skills</span>
               </span>
@@ -110,7 +119,9 @@ const Menu = () => {
 
             <Link
               to={"/contactme"}
-              className={`navi-link ${location.pathname === "/contactme" ? "active" : ""}`}
+              className={`navi-link ${
+                location.pathname === "/contactme" ? "active" : ""
+              }`}
               onClick={clickAny}
             >
               <span className="oneLinkOnSide">
