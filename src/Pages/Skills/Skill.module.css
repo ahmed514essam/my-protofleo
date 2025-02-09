@@ -1,6 +1,8 @@
 .skillSection {
 margin-top: 80px;
+
 width: 100%;
+min-height: 100vh;
 height: 100%;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 background-color: hsla(207, 62%, 9%, 0.997) ;
@@ -13,68 +15,31 @@ background-color: hsla(207, 62%, 9%, 0.997) ;
     text-align: center;
     color: rgb(70, 177, 196); 
 padding-top: 50px;
+padding-bottom: 50px;
 }
-.oneskill {
-    width: 230px;
-    height: 130px;
-    margin-bottom: 15px;
-background-color: rgb(12, 43, 48);  
-  border-radius: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    transition: .5s ease;
-}
-.imgSpan img {
-    object-fit:cover;
+.btnCategories {
     width: 100%;
-    height: 100%;
+    padding-left: 15px;
+    gap: 20px;
 
 }
-.imgSpan {
-    width: 60px;
+.btnCategories button {
+    padding: 10px 12px;
+    border: 0;
+    font-weight: 600; 
+    margin-right: 10px;
+    border-radius: 15px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.2em;
+font-weight: 700;
 }
-.nameofSkill {
-    color: aliceblue;
-    font-size: 1.7em;
-    width: 50%;
-}
-.skillContent {
-    width: 90%;
-    margin: auto;
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-}
-.oneskill:hover {
-    background-color: rgb(38, 103, 114);
-
-}
-@media (max-width:1183px) {
-    .oneskill {
-        width: 270px;
+@media (max-width:519px) {
+    .btnCategories button {
+        margin-bottom: 16px;
     }
 }
-@media (max-width:984px) {
-    .oneskill {
-        width: 230px;
-    }
-}
-@media (max-width:849px) {
-    .oneskill {
-        width: 280px;
-    }
-}
-@media (max-width:674px) {
-    .oneskill {
-        width: 230px;
-    }
-}
-@media (max-width:556px) {
-    .oneskill {
-        width: 290px;
+@media (max-width:479px) {
+    .btnCategories button {
+        margin-bottom: 15px;
     }
 }

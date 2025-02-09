@@ -11,6 +11,7 @@ interface DataItem {
     image: string;
     demo:string;
     repo:string;
+    about:string;
   }
 
 const Projects = () => {
@@ -76,6 +77,7 @@ setCurrentItem(null);
           
               </div> 
             <h3>{item.name}</h3>
+            <p className={styles.aboutProj}>{item.about}</p>
 <p className={styles.overParar} onClick={() => displayOvView(item)}>More</p>
             <div className={styles.divButtons}>
           <Link className={styles.linkDemo} to={item.demo}>Demo</Link>

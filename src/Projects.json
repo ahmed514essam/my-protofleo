@@ -4,62 +4,79 @@
         "description" : "Muslim Quran is a wonderful platform that allows you to read the entire Quran and recite various supplications, including morning and evening prayers, as well as post-prayer supplications. It also features a radio with a selection of sheikhs and reciters." ,
         "demo" : "https://quran-git-main-ahmed-essams-projects-be842e8b.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/Quran.git" ,
-        "image" : "projectsImages/muslim.png"
+        "image" : "projectsImages/muslim.png",
+        "about" : "Quran Website By React Js and JavaScript"
+
     },
     {
         "name" : "Savor",
         "description" : "Savor is a premium restaurant offering a range of services, including delivery and reservations. We take pride in serving a variety of mouthwatering and delightful dishes." ,
         "demo" : "https://purely-tasty.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/PurelyTasty.git" ,
-        "image" : "projectsImages/savor.png"
+        "image" : "projectsImages/savor.png",
+        "about" : "Savor Resturant Website By React Js and TypeScript"
+
     },
     {
         "name" : "Weki Search",
         "description" : "A site to search for anything on the original Wikipedia site by typing it, even if it is an ace, and there is a page for favorites." ,
         "demo" : "https://github.com/ahmed514essam/Wekipdia-search-engine.git" ,
         "repo" : "https://wekipdia-search-engine.vercel.app/" ,
-        "image" : "projectsImages/weki.png"
+        "image" : "projectsImages/weki.png",
+        "about" : "Weki Engine Search Website By React Js and JavaScript"
+
     },
     {
         "name" : "Pets Store",
         "description" : "A site that sells pets, including cats and dogs, their comfort products, and their food" ,
         "demo" : "https://pets-store-umber.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/Pets-Store.git" ,
-        "image" : "projectsImages/pets.png"
+        "image" : "projectsImages/pets.png",
+        "about" : "Pets Store Website By React Js and JavaScript"
+
     },
     {
         "name" : "Netflix",
         "description" : "A basic replica of Netflix." ,
         "demo" : "https://project-as-net-flix.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/ProjectAsNetFlix.git" ,
-        "image" : "projectsImages/netflix.png"
+        "image" : "projectsImages/netflix.png",
+        "about" : "Netflix   By HTML , CSS and JavaScript"
+
     },
     {
         "name" : "Football Quiz",
         "description" : "My first project with Next.js, built using TypeScript, is a general football trivia app. I incorporated mission-based concepts and various hooks to develop it." ,
         "demo" : "https://football-questions.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/Football-Questions.git" ,
-        "image" : "projectsImages/FootballQuiz.png"
+        "image" : "projectsImages/FootballQuiz.png",        "about" : "Football Website By Next Js and TypeScript"
+ 
     },
     {
         "name" : "Caluclator",
         "description" : "A simple calculator created using JavaScript only" ,
         "demo" : "https://ahmed514essam.github.io/Simble-Calculator/" ,
         "repo" : "https://github.com/ahmed514essam/Simble-Calculator.git" ,
-        "image" : "projectsImages/calc.png"
+        "image" : "projectsImages/calc.png",
+        "about" : "Calculator Website By and JavaScript"
+
     },
     {
         "name" : "Product Card",
         "description" : "Dessert products that allow you to put what you like in the basket, choose the quantity, and see the total price, simply and compatible with all screens." ,
         "demo" : "https://ahmed514essam.github.io/Product-List-with-Cart/" ,
         "repo" : "https://github.com/ahmed514essam/Product-List-with-Cart.git" ,
-        "image" : "projectsImages/pcard.png"
+        "image" : "projectsImages/pcard.png",
+        "about" : "Product Card By and JavaScript"
+
     },
     {
         "name" : "Essam Clothes",
         "description" : "A clothing store offering a wide selection of men's and women's apparel, shoes, and a convenient shopping basket. It features a search function to help you find what you need and includes a login option for personalized access." ,
         "demo" : "https://essam-clothes.vercel.app/" ,
         "repo" : "https://github.com/ahmed514essam/Essam-Clothes.git" ,
-        "image" : "projectsImages/essamClothes.png"
+        "image" : "projectsImages/essamClothes.png" ,
+        "about" : "Essam Clothes Website By React Js and TypeScript"
+
     }
 ]

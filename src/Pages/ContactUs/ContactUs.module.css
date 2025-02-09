@@ -10,6 +10,7 @@ overflow: hidden;
 .continueContct {
     height: 100%;
 }
+.anotherWay {padding-bottom: 20px;}
 @media (max-width:1200px) {
   
     .bageContact {
@@ -175,6 +176,7 @@ cursor: pointer;
     .anotherWay {
         width: 99%;
         margin: auto;
+        padding-bottom: 20px;
   
     }
     .googleAc {

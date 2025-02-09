@@ -2,6 +2,7 @@ import style from "./about.module.css";
 import CursorImages from "./CursorImages/CursorImages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faLinkedinIn, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import {faLink} from "@fortawesome/free-solid-svg-icons"
 const About = () => {
   return (
     <>
@@ -99,11 +100,19 @@ const About = () => {
               <h2>Certificates :-</h2>
               <p>
                 Eraasoft certified Frontend Web Developer
-                <a>Open </a>
+                
               </p>
+              <a href="https://drive.google.com/file/d/1DH96jq-mVLTynMliffdSOQdJL2dHR5ey/view" target="_blank" className={style.openCertificate}><FontAwesomeIcon icon={faLink} /> Open</a>
             </div>
+            <span className={style.spanHireMe}>
+            <a className={style.hireMeBtn} href="mailto:your-ahmedessaam124@gmail.com?subject=Hello&body=I%20want%20to%20reach%20out">Hire Me</a>
+          </span>
           </div>
+
+
         </div>
+
+
       </section>
     </>
   );
